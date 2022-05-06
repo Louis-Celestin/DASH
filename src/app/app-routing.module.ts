@@ -6,6 +6,7 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
+import { SondagesModule } from './views/sondages/sondages.module';
 
 const routes: Routes = [
   {
@@ -69,6 +70,11 @@ const routes: Routes = [
         path: 'pages',
         loadChildren: () =>
           import('./views/pages/pages.module').then((m) => m.PagesModule)
+      },
+      {
+        path: 'sondages',
+        loadChildren: () =>
+          import('./views/sondages/sondages.module').then((m) => m.SondagesModule)
       },
     ]
   },

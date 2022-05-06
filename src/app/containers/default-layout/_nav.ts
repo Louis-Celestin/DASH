@@ -147,12 +147,12 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Projets',
-    url: '/projets',
+    url: '/sondages',
     iconComponent: { name: 'cil-file' },
     children: [
       {
         name: 'Ajouter un projet',
-        url: '/buttons/button-groups',
+        url: '/sondages/ajout-sondage',
       },
       {
         name: 'Lister les projets',
@@ -164,7 +164,6 @@ export const navItems: INavData[] = [
       },
     ],
   },
-
   {
     title: true,
     name: 'Gestions des sondages',
@@ -172,16 +171,16 @@ export const navItems: INavData[] = [
 
   {
     name: 'Sondages',
-    url: '/forms',
+    url: '/sondages',
     iconComponent: { name: 'cil-chart' },
     children: [
       {
         name: 'Ajouter un sondage',
-        url: '/forms/form-control',
+        url: '/sondages/ajout-sondage',
       },
       {
         name: 'Lister les sondages',
-        url: '/forms/select',
+        url: '/sondages/liste-sondages',
         // children: [
         //   {
         //     name: '',
@@ -191,7 +190,7 @@ export const navItems: INavData[] = [
       },
       {
         name: 'Mes sondages',
-        url: '/forms/checks-radios',
+        url: '/sondages/mes-sondages',
       },
       // {
       //   name: 'Range',
