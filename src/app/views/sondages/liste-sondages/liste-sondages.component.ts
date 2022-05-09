@@ -25,4 +25,19 @@ export class ListeSondagesComponent implements OnInit {
     });
   }
 
+  sondageDetails(id : number){
+    this.router.navigate(['detail-sondage', id]);
+  }
+
+  updateSondage(id: number){
+    this.router.navigate(['update-employee', id]);
+  }
+
+  deleteSondage(id: number){
+    this.sondageService.deleteSondage(id).subscribe( data => {
+      console.log(data);
+      this.getSondages();
+    })
+  }
+
 }

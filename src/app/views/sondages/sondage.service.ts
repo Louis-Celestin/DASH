@@ -19,4 +19,16 @@ export class SondageService {
   createSondage(sondage: Sondage): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}`, sondage);
   }
+    getSondageId(id: number): Observable<Sondage>{
+      return this.httpClient.get<Sondage>(`${this.baseURL}/${id}`);
+    }
+  
+    updateSondage(id: number, sondage: Sondage): Observable<Object>{
+      return this.httpClient.put(`${this.baseURL}/${id}`, sondage);
+    }
+  
+    deleteSondage(id: number): Observable<Object>{
+      return this.httpClient.delete(`${this.baseURL}/${id}`);
+    }
+  
 }

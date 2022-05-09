@@ -7,7 +7,6 @@ export interface Sondage {
     deleted_at:  null;
     user:        User;
 }
-
 export interface User {
     id:   number;
     name: string;
