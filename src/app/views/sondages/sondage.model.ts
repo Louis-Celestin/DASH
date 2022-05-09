@@ -1,8 +1,14 @@
-export class Sondage {
+export interface Sondage {
+    id:          number;
+    description: string;
+    IdUser:      number;
+    created_at:  Date;
+    updated_at:  Date;
+    deleted_at:  null;
+    user:        User;
+}
 
-    id?: number;
-    nom?: string;
-    description?: string;
-    auteur? : string;
-    vote? : number;
+export interface User {
+    id:   number;
+    name: string;
 }

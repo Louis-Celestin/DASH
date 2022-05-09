@@ -8,7 +8,7 @@ import { Sondage } from 'src/app/views/sondages/sondage.model';
 })
 export class SondageService {
 
-  baseURL = "http://localhost:3000/sondages";
+  baseURL = "http://192.168.252.201:8000/api/sondageIndex";
 
   constructor(private httpClient: HttpClient) { }
 

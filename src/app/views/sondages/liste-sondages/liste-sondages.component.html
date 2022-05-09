@@ -1,31 +1,30 @@
-<h4 class="card-title">Liste des sondages</h4>
+<div class="card">
 <div class="card-body">
-  <div class="table-responsive">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="text-center">#</th>
-          <th>Nom</th>
-          <th>description</th>
-          <th>Auteur</th>
-          <th class="text-right">Nombre de votes</th>
-          <th class="text-right">Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let sondage of sondages">
-          <td class="text-center">{{ sondage.id }}</td>
-          <td>{{ sondage.nom }}</td>
-          <td>{{ sondage.description }}</td>
-          <td>{{sondage.auteur}}</td>
-          <td class="text-right">{{sondage.vote}}</td>
-          <td class="td-actions text-right">
-            <a href=""><i class="tiny material-icons">remove_red_eye</i></a>
-            <a href=""><i class="tiny material-icons">create</i></a>
-            <a href=""><i class="tiny material-icons">close</i></a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Description</th>
+        <th scope="col">Auteur</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sondage of sondages">
+        <th scope="row">{{ sondage.id }}</th>
+        <td>{{ sondage.description }}</td>
+        <td>{{ sondage.user.name }}</td>
+        <td colspan="2">
+          <span class="btn btn-warning"><i class="fa-solid fa-eye"></i></span
+          >&nbsp;
+          <span class="btn btn-info mr-1"
+            ><i class="fa-solid fa-pen-to-square"></i></span
+          >&nbsp;
+          <span class="btn btn-danger"><i class="fa-solid fa-trash"></i></span
+          >&nbsp;
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 </div>
