@@ -21,7 +21,7 @@ import { DetailSondageComponent } from './detail-sondage/detail-sondage.componen
     SondagesRoutingModule,
     ReactiveFormsModule,
     DocsComponentsModule,
-    FormsModule
+
   ]
 })
 export class SondagesModule { }

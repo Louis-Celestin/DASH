@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Sondage } from '../sondage.model';
 import { SondageService } from '../sondage.service';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -11,12 +12,12 @@ import { Router } from '@angular/router';
 })
 export class AjoutSondageComponent implements OnInit {
 
-   sondage ={};
+  sondage: Sondage = new Sondage();
 
   constructor(private sondageService : SondageService, private router : Router) { }
 
   saveSondage(){
-    this.sondageService.createSondage(this.sondage as Sondage).subscribe(data=>{
+    this.sondageService.createSondage(this.sondage).subscribe(data=>{
       console.log(data);
       this.goToSondageListe();
     
