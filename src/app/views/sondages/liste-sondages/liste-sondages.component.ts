@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import {Sondage} from 'src/app/views/sondages/sondage.model';
+import {SondageService} from 'src/app/views/sondages/sondage.service';
 
 @Component({
   selector: 'app-liste-sondages',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeSondagesComponent implements OnInit {
 
-  constructor() { }
+  sondages! : Sondage[];
+
+
+  constructor(private sondageService: SondageService, private router: Router) { }
 
   ngOnInit(): void {
+    this.getSondages();
+  }
+
+  private getSondages(){
+    this.sondageService.getSondages().subscribe(data=>{
+      this.sondages = data;
+    });
   }
 
 }
