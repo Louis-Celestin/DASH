@@ -8,6 +8,7 @@ import { IconModule } from '@coreui/icons-angular';
 import { ListeSondagesComponent } from './liste-sondages/liste-sondages.component';
 import { MesSondagesComponent } from './mes-sondages/mes-sondages.component';
 import { DetailSondageComponent } from './detail-sondage/detail-sondage.component';
+import 'material-icons/iconfont/material-icons.css';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DetailSondageComponent } from './detail-sondage/detail-sondage.componen
     SondagesRoutingModule,
     ReactiveFormsModule,
     DocsComponentsModule,
+    FormsModule
 
   ]
 })

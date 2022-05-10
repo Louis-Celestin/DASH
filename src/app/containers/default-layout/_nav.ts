@@ -128,11 +128,11 @@ export const navItems: INavData[] = [
     children: [
       {
         name: 'Ajouter un utilisateur',
-        url: '/buttons/button-groups',
+        url: '/',
       },
       {
         name: 'Lister les utilisateurs',
-        url: '/buttons/button-groups',
+        url: '/',
       },
       // {
       //   name: 'Dropdowns',
@@ -147,20 +147,20 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Projets',
-    url: '/sondages',
+    url: '/',
     iconComponent: { name: 'cil-file' },
     children: [
       {
         name: 'Ajouter un projet',
-        url: '/sondages/ajout-sondage',
+        url: '/',
       },
       {
         name: 'Lister les projets',
-        url: '/buttons/button-groups',
+        url: '/',
       },
       {
         name: 'Valider un commentaire',
-        url: '/buttons/dropdowns',
+        url: '/',
       },
     ],
   },
@@ -181,45 +181,13 @@ export const navItems: INavData[] = [
       {
         name: 'Lister les sondages',
         url: '/sondages/liste-sondages',
-        // children: [
-        //   {
-        //     name: '',
-        //     url: '/buttons/button-groups',
-        //   },
-        // ],
       },
       {
         name: 'Mes sondages',
         url: '/sondages/mes-sondages',
       },
-      // {
-      //   name: 'Range',
-      //   url: '/forms/range',
-      // },
-      // {
-      //   name: 'Input Group',
-      //   url: '/forms/input-group',
-      // },
-      // {
-      //   name: 'Floating Labels',
-      //   url: '/forms/floating-labels',
-      // },
-      // {
-      //   name: 'Layout',
-      //   url: '/forms/layout',
-      // },
-      // {
-      //   name: 'Validation',
-      //   url: '/forms/validation',
-      // },
     ],
   },
-  // {
-  //   name: 'Charts',
-  //   url: '/charts',
-  //   iconComponent: { name: 'cil-chart-pie' },
-  // },
-
   {
     title: true,
     name: 'Gestions des informations',
