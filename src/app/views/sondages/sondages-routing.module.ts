@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AjoutSondageComponent } from './ajout-sondage/ajout-sondage.component';
 import { ListeSondagesComponent } from './liste-sondages/liste-sondages.component';
 import { MesSondagesComponent } from './mes-sondages/mes-sondages.component';
 
@@ -15,13 +14,6 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'ajout-sondage'
-      },
-      {
-        path: 'ajout-sondage',
-        component: AjoutSondageComponent,
-        data: {
-          title: 'ajout de sondage'
-        }
       },
       {
         path: '',
